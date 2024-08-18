@@ -12,10 +12,10 @@ void printArray(int *arr, int n)
 
 void Merging(int arr[], int low, int mid, int high)
 {
-    int i, j, k;
+    int i = low, j = mid + 1, k = 0;
     int n = (high - low + 1);
     int arrT[n];
-    for (i = low, j = mid + 1, k = 0; i <= mid, j <= high;)
+    while (i <= mid && j <= high)
     {
         if (arr[i] < arr[j])
         {
